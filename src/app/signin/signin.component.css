@@ -1,0 +1,120 @@
+.container{
+    overflow:hidden
+}
+
+.img
+{
+margin: -98px;
+height:719px;
+width:90px;
+}   
+.container_2{
+ 
+ flex:2;    
+ padding:10px;
+ 
+}
+.sign{
+    padding-top:100px;
+    text-align: center;
+  
+}
+.container{
+
+    display: flex;
+    margin:-8px;
+    overflow: hidden;   
+    
+}
+input[type=email],input[type=password] {
+
+    padding:.5rem;
+   padding: 10px 12px;
+   width:250px;
+   height:50px;
+   border-radius: none;
+   width:300px;
+  
+}
+ .form{
+     width: 100%;
+     max-width: 416px;
+     margin:auto
+     }
+     .form_1{
+
+        display:flex;
+        justify-content: space-between;          
+            align-items: center;
+     }  
+     .form_label{
+        display:block;
+      border:0;
+        padding:0px;
+         font-weight:bold ;
+         margin: 0 0 4px 0;
+         font: bold 15px/24px "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;         color: #444;
+         font-size: 12px;
+         flex:1        
+}
+    ::placeholder{
+        font: 16px/22px "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        color:#A5A3A3;
+        padding:20px
+    }
+     .button{
+
+        background-color: red;
+        color: white;
+        padding:.5rem;
+        padding: 10px 12px;
+        width:300px;
+        height:50px;
+        border:none;
+        box-shadow: 0 0 7px 7px pink;
+        transition: all 0.3s ease 0s;
+       
+     }
+     .button:hover {
+        color: #fff;
+        transform: translateY(-5px);
+      }
+     .para{
+         text-align: center;
+         font-size: 12px;
+         color:#A5A3A3
+     }
+     .para_1{
+         color:black;
+      font-weight: bold;
+      text-decoration: none;
+     }
+
+    .google-plus{
+
+        background-color: #ffffff;
+        border: none;
+    }
+     .fa-google-plus:before{
+
+    font-size: 25px;
+    color: #969393;
+   }
+   .fa-facebook-f{
+    font-size: 25px;
+    color: #969393;
+
+   }
+   .facebook{
+
+    background-color: #ffffff;
+    border: none;
+   } 
+   .social{
+
+   padding-left:100px;
+  
+
+   }
+      
+      
