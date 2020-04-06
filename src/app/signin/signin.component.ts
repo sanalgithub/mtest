@@ -8,28 +8,25 @@ import { Router } from '@angular/router';
   styleUrls: ['./signin.component.css']
 })
 export class SigninComponent implements OnInit {
-  form: FormGroup;
+  myForm: FormGroup;
+  
   constructor(public router:Router)  { }
   ngOnInit(): void {
-    // add all FormControls to FormGroup
-    this.form = new FormGroup({
+    this.myForm = new FormGroup({
      
       email: new FormControl(''),
       password: new FormControl(''),
     });
   }
-  onSubmit(form: FormGroup) {
-    var params = {
-      
-      email:form.value.email,
-      password:form.value.password
+  
+  onSubmit(myForm: FormGroup) {
+    console.log('Email', myForm.value.email);
+    console.log('password', myForm.value.password);
+    if(myForm.value.email === 'admin' && myForm.value.password === 'password'){
+      this.router.navigate(['marker'])
     }
-
-    console.log(JSON.stringify(params));
-    this.router.navigate(['marker'])//Navigation routes to next components after clicking button//
- 
-   
-    
-
+    else{
+      alert('Username and Password is invalid')
+    }
   }
 }

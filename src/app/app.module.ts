@@ -9,8 +9,7 @@ import { MarkerComponent } from './marker/marker.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
-
-
+import { NguiMapModule} from '@ngui/map';
 
 
 
@@ -19,7 +18,8 @@ import {MatInputModule} from '@angular/material/input';
   declarations: [
     AppComponent,
     SigninComponent,
-    MarkerComponent
+    MarkerComponent,
+ 
   ],
   imports: [
     BrowserModule,
@@ -28,7 +28,9 @@ import {MatInputModule} from '@angular/material/input';
     FormsModule,
     BrowserAnimationsModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    NguiMapModule.forRoot
+    ({ apiUrl: 'https://maps.google.com/maps/api/js?key=AIzaSyCaYaTxduouzzYjnxBoDhsUCAgi51vIczQ&libraries=visualization,places,drawing,geometry' })
 
    
 

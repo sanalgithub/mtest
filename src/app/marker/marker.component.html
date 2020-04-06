@@ -1,58 +1,50 @@
-<div class="container">
-    <div class="container_1">
-        <div class="box">
-            <img src="assets/images/261c48.png" class="img1"> 
-            <img src="assets/images/dtc_192.png" class="img2"> 
-
-        </div><br>
-    </div>
-    <div class="container_2">
-      
-
-        
-        <div class="form">
-           
-            <div class="mat-container">
-                <div class="marker_1">
-
-                    Place your marker
-                </div><br><br><br><br>
-                
-                <mat-form-field class="mat-container_1">
-                    <mat-label class="label_matinput">Latitude</mat-label>
-                    
-                    <input matInput>
-                  </mat-form-field><br><br><br>
-                  
-                  <mat-form-field class="mat-container_1">
-                    <mat-label class="label_matinput">Longitude</mat-label>
-                    
-                    <input matInput>
-                  </mat-form-field>
-                  
-            </div><br> <br><br> <br><br> <br><br> <br><br> <br>
-            <button type="submit" class="btn" >Place Marker</button>
+<div class="container"> 
+<div class="container_1">
+   <header> 
+       <a href="" class="btn_1">Menu&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <a href="" class="btn_2">Place your Marker</a>
+       <img src ="assets/images/rsz_face.jpg" class="img_1">       
+           <img src="assets/images/notifications-bell-button@2x.png" class="img_2">      
+    
+ <img src="assets/images/gear.png" class="_gear"> 
+   </header>
+  </div>
+  <div class="container_2">    
+    <div class="box">
+        <img src="assets/images/261c48.png" class="img_3"> 
+         <img src="assets/images/dtc_192.png" class="logo"> 
+</div><br>
+</div>
+<div class="container_3">  
+  <div class="form">          
+      <div class="mat-container"> 
+          <div class="marker_1">
+           Place your Marker
+          </div><br><br>
+             <mat-form-field class="mat-container_1">
+              <mat-label class="label_matinput">Latitude</mat-label>                        
+              <input matInput>
+            </mat-form-field><br><br><br>                 
+            <mat-form-field class="mat-container_1">
+              <mat-label class="label_matinput">Longitude</mat-label>                    
+              <input matInput>
+            </mat-form-field>               
+      <br> <br><br> <br><br> <br><br> <br>
+      <button type="submit" class="btn" >Place Marker</button>
+  </div>
 </div>  
-
-<div class="container_3">
-    <div>
-        <img src ="assets/images/rsz_face.jpg" class="img_3"> 
-    </div>
-     <div class="name">
-         Ameen
-     </div>
-     <div class="vl"></div>
+<div class="container_4">
+  <div class="g_map">
+   <ngui-map center="Dubai" >
+   <marker position="Dubai"
+   [icon]="{
+     src: 'assets/images/map_marker.png',
+     anchor: [16,16],
+     size: [32,32],
+     scaledSize: [32,32]
+   }">
+  </marker></ngui-map>
+  </div>
+  </div>
 </div>
-<div>
-
-    <img src="assets/images/notifications-bell-button@2x.png" class="img_4">
-</div>
-
-   
-      <img src="assets/images/gear.png" class="img_5">
-</div>
-
-  
-</div>        
-       
 

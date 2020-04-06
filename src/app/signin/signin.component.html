@@ -2,26 +2,26 @@
    
   <div class="container_1">
         <div class="box">
-            <img src="assets/images/vectr.png" class="img" style="padding:0px;width:95%"> 
+            <img src="assets/images/vectr.png" class="img" style="padding:0px;width:105%"> 
         </div><br>    
     </div>
  <div class="container_2">
         <div class="form">
             <div>
                 <h3 class="sign"><b>Sign in to DTC</b></h3><br>
-               <div>
-                <form [formGroup]="form" (ngSubmit)="onSubmit(form)">
-            <div>
-
-                <input type="email" name="mail"placeholder="Email" class="form-control" style="background-color:#dfdfdf"  formControlName="email"size="47"><br>
+            </div>
+                <form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm)"> 
+            
+                    <div>
+                <input type="email" name="mail"placeholder="Email" class="form-control" formControlName="email"size="47"><br>
             </div>
             <div>          
-                <input type="password" name="pwrd" placeholder="Password" class="form-control" formControlName="password" style="background-color:#dfdfdf" size="47"
+                <input type="password" name="pwrd" placeholder="Password" class="form-control" formControlName="password" size="47"
                 ><br><br>
             </div><br> 
 
             <div>
-                <button type="submit" class="button">Sign in</button>
+                <button type="submit" class="button" >Sign in</button>
 
             </div> <br><br>
                 </form>
@@ -30,7 +30,6 @@
             <div class="social">
             <button class="facebook"> <i class="fa fa-facebook-f"></i></button> &nbsp; &nbsp; &nbsp;
             <button class="google-plus"><i class="fa fa-google-plus"></i></button> 
-
         </div>    
         </div>       
  </div> 

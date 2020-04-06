@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./marker.component.css']
 })
 export class MarkerComponent implements OnInit {
-
+ 
+ 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-}
+  }
+
+
+
