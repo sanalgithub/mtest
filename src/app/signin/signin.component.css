@@ -1,7 +1,9 @@
 .container{
     overflow:hidden
 }
-
+.container_1{
+    flex: 3
+}
 .img
 {
 margin: -98px;
@@ -21,6 +23,7 @@ height:719px;
     padding-top:100px;
     text-align: center;
     font-size:25px;
+    margin-left: -70px;
 
     
     font-family: 'Gotham';
@@ -102,6 +105,7 @@ input[type=email],input[type=password] {
          text-align: center;
          font-size: 12px;
          color:#A5A3A3;
+         margin-left: -70px;
       
      }
      .para_1{
@@ -133,6 +137,7 @@ input[type=email],input[type=password] {
    .social{
 
    padding-left:100px;
+   margin-left: -16px;
   
 
    }

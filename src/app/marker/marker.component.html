@@ -30,30 +30,30 @@
           </h1><br><br>
              <mat-form-field class="mat-container_1">
               <mat-label class="label_matinput">Latitude</mat-label>                        
-              <input matInput>
+              <input matInput  [(ngModel)]="lat" value="25.2048" >
             </mat-form-field><br><br><br>                 
             <mat-form-field class="mat-container_1">
               <mat-label class="label_matinput">Longitude</mat-label>                    
-              <input matInput>
+              <input matInput [(ngModel)]="lng" value="55.2708" >
             </mat-form-field>               
       <br> <br><br> <br><br> <br><br> <br>
-      <button type="submit" class="btn" >Place Marker</button>
+      <button type="submit" (click)="markerPush();" class="btn">Place Marker</button>
   </div>  
 </div> 
 
 
 <div class="container_4">
   <div class="g_map">
-   <ngui-map center="Dubai" >
-   <marker position="Dubai"
-   [icon]="{
-     src: 'assets/images/map_marker.png',
-     anchor: [16,16],
-     size: [32,32],
-     scaledSize: [32,32]
-   }">
-  </marker></ngui-map>
+
+
+    <ngui-map zoom="13" [center]="center" scrollwheel="false" (mapReady$)="onMapReady($event)" mapTypeId="ROADMAP">
+      
+      <marker *ngFor="let pos of positions" [position]="pos"></marker>
+  </ngui-map>
+
+   
   </div>
   </div>
 </div> 
 </div>
+ 

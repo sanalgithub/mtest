@@ -1,0 +1,6 @@
+{
+    "window.autoDetectColorScheme": true,
+    "editor.cursorSmoothCaretAnimation": true,
+    "editor.find.autoFindInSelection": "multiline",
+    "search.actionsPosition": "right"
+}
